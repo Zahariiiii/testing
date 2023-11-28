@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Розклад уроків</title>
+</head>
+<body>
+    <header class="test">
+        <h1>Розклад уроків</h1>
+        <ul>
+        <a target="_blank" style="margin: 30px;" href="/rozklad.html">Розклад дзвінків</a>
+        <a target="_blank" style="margin: 30px;" href="/homework.html">Домашнє завдання</a>
+        <a target="_blank" style="margin: 30px;" href="http://t.me/zahariikovalenko">Побажання</a>
+        </ul>
+    </header>
+    <section id="schedule">
+        <h2>Розклад</h2>
+        <table border="3">
+            <tr>
+                <th>День</th>
+                <th>1 зміна</th>
+                <th>2 зміна</th>
+                
+                <th>День</th>
+                <th>1 зміна</th>
+                <th>2 зміна</th>
+            </tr>
+            <tr>
+                <td>Понеділок</td>
+                <td>Зар. літ.<br>Іст. укр.</td>
+                <td>Географія<br>Англ. мова<br>Фізра<br>Алгебра<br>Біологія</td>
+
+                <td>Четвер</td>
+                <td>Зар. літ.<br>Біологія</td>
+                <td>Англ. мова<br>Укр. мова<br>Укр. літ<br>Фізра<br>Трудове</td>
+            </tr>
+            <tr>
+                <td>Вівторок</td>
+                <td>Англ. мова</td>
+                <td>Хімія<br>Геометрія<br>Фізика<br>Укр. мова<br>Обр. мистецтво</td>
+
+                <td>П'ятниця</td>
+                <td>Фізика<br>Осн здоров'я</td>
+                <td>Укр. мова<br>Хімія<br>Всесвітня. Іст<br>Геометрія<br>Географія</td>
+            </tr>
+            <tr>
+                <td>Середа</td>
+                <td>Інформатика</td>
+                <td>Муз. мист<br>Іст. укр<br>Укр. літ<br>Алгебра<br>Фізра</td>
+            </tr>
+            
+            
+        </table>
+    </section>
+    <form>
+      <section id="homework">
+          <h2>Завдання до уроку</h2>
+          <label for="day">Оберіть день:</label>
+          <select id="day">
+              <option value="1">Понеділок</option>
+              <option value="2">Вівторок</option>
+              <option value="3">Середа</option>
+              <option value="4">Четвер</option>
+              <option value="5">П'ятниця</option>
+          </select>
+
+          <label for="lesson">Оберіть урок:</label>
+          <select id="lesson">
+              <option value="1">Українська мова</option>
+              <option value="2">Українська література</option>
+              <option value="3">Англійська мова</option>
+              <option value="4">Зарубіжна література</option>
+              <option value="5">Історія України</option>
+              <option value="6">Всесвітня історія</option>
+              <option value="7">Музичне мистецтво</option>
+              <option value="8">Образотворче мистецтво</option>
+              <option value="9">Алгебра</option>
+              <option value="10">Геометрія</option>
+              <option value="11">Біологія</option>
+              <option value="12">Географія</option>
+              <option value="13">Фізика</option>
+              <option value="14">Хімія</option>
+              <option value="15">Трудове навчання</option>
+              <option value="16">Інформатика</option>
+              <option value="17">Основи здоров'я</option>
+              <option value="18">Фізра</option>
+          </select>
+
+          <label for="shift">Оберіть зміну:</label>
+          <select id="shift">
+              <option value="1">1 зміна</option>
+              <option value="2">2 зміна</option>
+          </select>
+
+          <label for="homeworkInput">Введіть завдання:</label>
+          <textarea id="homeworkInput"></textarea>
+
+          <button class="load-homework-btn">Завантажити дз</button>
+
+            <input class="date" type="date" id="date">
+
+          <div id="homeworkContent">
+              <!-- Тут буде виводитися завдання -->
+          </div>
+          
+      </section>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
